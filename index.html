@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" type="text/css" />
+    <title>Metaverse</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="./three.js"></script>
+    <script src="./src/index.js" type="module">
+      //Error mime type ? put extension name file
+    </script>
+    <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+
+    <form onsubmit="return false">
+      <div class="row g-3">
+        <div class="col-sm">
+          <label class="form-label">NFT name</label>
+          <input class="form-control" type="text" id="nft-name" required />
+        </div>
+
+        <div class="col-sm">
+          <label class="form-label">NFT width</label>
+          <input class="form-control" type="number" id="nft-width" required />
+        </div>
+
+        <div class="col-sm">
+          <label class="form-label">NFT height</label>
+          <input class="form-control" type="number" id="nft-height" required />
+        </div>
+
+        <div class="col-sm">
+          <label class="form-label">NFT depth</label>
+          <input class="form-control" type="number" id="nft-depth" required />
+        </div>
+
+        <div class="col-sm">
+          <label class="form-label">NFT x-position</label>
+          <input class="form-control" type="number" id="nft-x" required />
+        </div>
+
+        <div class="col-sm">
+          <label class="form-label">NFT y-position</label>
+          <input class="form-control" type="number" id="nft-y" required />
+        </div>
+
+        <div class="col-sm">
+          <label class="form-label">NFT y-position</label>
+          <input class="form-control" type="number" id="nft-z" required />
+        </div>
+
+        <button id="mint" class="btn btn-primary" type="submit">
+          Create a new NFT!
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
